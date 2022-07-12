@@ -1,0 +1,82 @@
+.social__list {
+  display: grid;
+  grid-template-columns: 113px 58px 58px 58px;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    min-width: 728px;
+    grid-template-columns: 547px 60px 60px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.social__item {
+  max-width: 82px;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 22px;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+  }
+}
+
+.social__link svg {
+  fill: #666666;
+}
+
+.social__link--vkontakte svg {
+  width: 20px;
+  height: 20px;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 75px;
+    left: 10px;
+  }
+}
+
+.social__link--pinterest svg {
+  width: 22px;
+  height: 22px;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 74px;
+    left: 70px;
+  }
+}
+
+.social__link--ok svg {
+  width: 20px;
+  height: 20px;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 75px;
+    left: 130px;
+  }
+}
+
+.social__link:hover svg {
+  fill: #7859cf;
+}
+
+.social__link:active svg {
+  fill: #7859cf;
+}
+
+.social__link--ok:hover svg {
+  fill: #7859cf;
+}
+
+.social__link--ok:active svg {
+  fill: #7859cf;
+}

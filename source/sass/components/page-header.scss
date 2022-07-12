@@ -1,0 +1,51 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+
+  background-color: #ffffff;
+}
+
+.page-header__logo span {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #333333;
+    width: 126px;
+    position: absolute;
+    left: 190px;
+  }
+}
+
+.page-header--home {
+  min-height: 543px;
+}
+
+.page-header__logo img {
+  width: 100%;
+}
+
+.page-header__logo {
+  display: inline-block;
+  width: 32px;
+  height: 36px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 82px;
+    height: 36px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 170px;
+    height: 36px;
+  }
+}
